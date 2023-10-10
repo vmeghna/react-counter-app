@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>counterApp-React</title>
+    <!--fontawesome cdn-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--custom tailwind css-->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              transparent: "hsla(0,0%,0%,0.3)",
+              current: "currentColor",
+              red: "#e5425b",
+              darkred: "#97313b",
+
+              black: "#000",
+              brown: "#554a46",
+              back: "#090100",
+              gray: "#d1d5db",
+
+              blue: "#007bff",
+              indigo: "#6610f2",
+              purple: " #6f42c1",
+              pink: " #e83e8c",
+              red: " #dc3545",
+              orange: "#fd7e14",
+              yellow: " #ffc107",
+              green: "#28a745",
+              teal: "#20c997",
+              cyan: "#17a2b8",
+              Lightgray: "#6c757d",
+              Darkgray: " #343a40",
+              primary: " #007bff",
+              secondary: "#6c757d",
+              success: "#28a745",
+              info: "#17a2b8",
+              warning: " #ffc107",
+              danger: " #dc3545",
+              light: "#f8f9fa",
+              dark: "#343a40",
+              first: "#ddf2f5",
+              yes: "#7fd8e6",
+              button: "#17a2b8",
+            },
+            fontFamily: {
+              roboto: ["Roboto", " sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-0 m-0">
+    <!--start-->
+    <div class="flex justify-center w-[100vw] h-[100vh] pt-20">
+      <!--container-->
+      <main class="w-[70%] h-[75%] pink bg-first border-yes border-[10px]">
+        <div class="justify-around flex w-[25%] ml-[40%] mt-[2%] leading-4">
+          <div>
+            <i class="fa-solid fa-cart-shopping mt-3"></i>
+          </div>
+          <span class="bg-button rounded-xl text-xl font-bold px-6 py-[1px]"
+            >0</span
+          >
+          <p class="text-black font-semibold text-lg mt-1">Items</p>
+        </div>
+        <!---->
+        <div class="w-[10%] justify-between flex ml-[46%] mt-[4%]">
+          <button class="bg-success px-[10px] py-[2px] rounded-sm">
+            <i class="fa fa-refresh" aria-hidden="true"></i>
+          </button>
+          <button class="bg-primary px-[10px] py-[2px] rounded-sm">
+            <i class="fa fa-recycle" aria-hidden="true"></i>
+          </button>
+        </div>
+        <!---->
+        <div
+          class="justify-around flex w-[40%] ml-[30%] mt-[4%] leading-4 h-[10%]"
+        >
+          <button class="bg-warning px-[20px] text-[30px] rounded-sm">
+            zero
+          </button>
+          <button class="bg-secondary px-[10px] rounded-sm">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-button px-[10px] rounded-sm">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-danger px-[10px] rounded-sm">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!---->
+        <div
+          class="justify-around flex w-[40%] ml-[30%] mt-[2%] leading-4 h-[10%]"
+        >
+          <button class="bg-warning px-[20px] text-[30px] rounded-sm">
+            zero
+          </button>
+          <button class="bg-secondary px-[10px] rounded-sm">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-button px-[10px] rounded-sm">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-danger px-[10px] rounded-sm">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!---->
+        <!---->
+        <div
+          class="justify-around flex w-[40%] ml-[30%] mt-[2%] leading-4 h-[10%]"
+        >
+          <button class="bg-warning px-[20px] text-[30px] rounded-sm">
+            zero
+          </button>
+          <button class="bg-secondary px-[10px] rounded-sm">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-button px-[10px] rounded-sm">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-danger px-[10px] rounded-sm">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!---->
+        <!---->
+        <div
+          class="justify-around flex w-[40%] ml-[30%] mt-[2%] leading-4 h-[10%]"
+        >
+          <button class="bg-warning px-[20px] text-[30px] rounded-sm">
+            zero
+          </button>
+          <button class="bg-secondary px-[10px] rounded-sm">
+            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-button px-[10px] rounded-sm">
+            <i class="fa fa-minus-circle" aria-hidden="true"></i>
+          </button>
+          <button class="bg-danger px-[10px] rounded-sm">
+            <i class="fa-solid fa-trash"></i>
+          </button>
+        </div>
+        <!---->
+      </main>
+      <!--container-->
+    </div>
+    <!--start-->
+  </body>
+</html>
